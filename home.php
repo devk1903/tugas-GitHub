@@ -28,7 +28,7 @@
   </head>
 
   <body>
-
+  <form id="form-container" class="form-container">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -58,6 +58,13 @@
           <ul class="nav nav-sidebar">
           <li class="active"><a href="home.php">Home</a></li>
             <br>
+            <label for="input">Wikipedia : </label>
+            <input type="text" id="input" value="">
+            <button id="submit-btn">Search</button>
+          <li class="wikipedia-container">
+              <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+              <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+          </li>
           </ul>
         </div>
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -90,11 +97,13 @@
           </div>    
       </div>
     </div>
+  </form>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
   </body>
